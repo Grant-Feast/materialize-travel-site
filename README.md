@@ -1,2 +1,2 @@
 # materialize-traveli-site
- A travel site made with Materialize
+ A one page wesite I made using materialize
