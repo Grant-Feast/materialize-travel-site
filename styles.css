@@ -18,6 +18,11 @@ header {
   background: transparent;
 }
 
+#weather h2 {
+  font-size: 2em;
+    display: inline;
+}
+
 @media(max-width: 670px) {
   header {
     min-height: 500px;
