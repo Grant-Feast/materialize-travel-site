@@ -1,3 +1,5 @@
+
+
 // Jquery
 $(document).ready(function() {
   $('.sidenav').sidenav();
@@ -11,8 +13,9 @@ $(document).ready(function() {
 // Weather api
 
 const weather = document.querySelector('#weather');
+const api_key = '';
 
-const res = axios.get('http://api.openweathermap.org/data/2.5/weather?q=New York City&units=imperial&appid=5f4c76467089adb3276bc94a084c3e38')
+const res = axios.get(`http://api.openweathermap.org/data/2.5/weather?q=New York City&units=imperial&appid=${api_key}`)
   .then(res => createElements(res))
   .catch(err => console.log(err))
 
