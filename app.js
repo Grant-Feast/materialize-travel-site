@@ -1,5 +1,4 @@
 
-
 // Jquery
 $(document).ready(function() {
   $('.sidenav').sidenav();
@@ -12,8 +11,10 @@ $(document).ready(function() {
 
 // Weather api
 
+require('dotenv').config();
+
 const weather = document.querySelector('#weather');
-const api_key = '';
+const api_key = process.env.API_KEY;
 
 const res = axios.get(`http://api.openweathermap.org/data/2.5/weather?q=New York City&units=imperial&appid=${api_key}`)
   .then(res => createElements(res))
