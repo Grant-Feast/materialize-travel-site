@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 // Weather api
 const weather = document.querySelector('#weather');
-const api_key = '5428c8023a2bbbb7e1f994f4531bd17f';
+const api_key = config.MY_KEY;
 
 const res = axios.get(`http://api.openweathermap.org/data/2.5/weather?q=New York City&units=imperial&appid=${api_key}`)
   .then(res => createElements(res))
